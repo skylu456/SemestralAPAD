@@ -1,0 +1,24 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web App with Google Form</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Embedded Google Form</h1>
+  <!-- Embed Google Form -->
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeQtMlJh4dc2YwMoyME4m2nrBYgEJRxwYxHQTpOHnMgtmzm1g/viewform?embedded=true" width="640" height="494" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  
+  <h2>Transformed Data</h2>
+  <div id="transformedData">
+    <% if (transformedData) { %>
+      <p><%= transformedData %></p>
+    <% } else { %>
+      <p>This will be the transformed data placeholder.</p>
+    <% } %>
+  </div>
+</body>
+</html>
